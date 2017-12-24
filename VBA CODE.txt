@@ -1,0 +1,475 @@
+Sub CartesionProduct()
+Dim startrange As Range
+
+Dim array1() As Variant
+Dim array2() As Variant
+Dim array3() As Variant
+Dim array4() As Variant
+Dim array5() As Variant
+Dim array6() As Variant
+Dim array7() As Variant
+Dim array8() As Variant
+
+Dim Number As Integer
+Number = InputBox("Enter Column Count", "Enter A Number")
+
+Select Case Number
+Case 2
+
+Set range1 = Application.InputBox(Prompt:="Please Select a Range", Type:=8)
+
+If range1.Cells.Count = 1 Then
+    ReDim array1(1 To 1, 1 To 1)
+    array1(1, 1) = range1.Value
+Else
+    array1 = Range(range1.Address())
+End If
+
+
+
+Set range1 = Application.InputBox(Prompt:="Please Select a Range", Type:=8)
+
+If range1.Cells.Count = 1 Then
+    ReDim array2(1 To 1, 1 To 1)
+    array2(1, 1) = range1.Value
+Else
+    array2 = Range(range1.Address())
+End If
+
+
+Set startrange = Application.InputBox(Prompt:="Please select where you want to put it", Type:=8)
+
+startrange.Select
+For i = 1 To UBound(array1)
+    For j = 1 To UBound(array2)
+        ActiveCell.Offset(Z, 0).Value = array1(i, 1) & array2(j, 1)
+        Z = Z + 1
+    Next
+Next
+
+Case 3
+
+Set range1 = Application.InputBox(Prompt:="Please Select a Range", Type:=8)
+
+If range1.Cells.Count = 1 Then
+    ReDim array1(1 To 1, 1 To 1)
+    array1(1, 1) = range1.Value
+Else
+    array1 = Range(range1.Address())
+End If
+
+Set range1 = Application.InputBox(Prompt:="Please Select a Range", Type:=8)
+
+If range1.Cells.Count = 1 Then
+    ReDim array2(1 To 1, 1 To 1)
+    array2(1, 1) = range1.Value
+Else
+    array2 = Range(range1.Address())
+End If
+
+Set range1 = Application.InputBox(Prompt:="Please Select a Range", Type:=8)
+
+If range1.Cells.Count = 1 Then
+    ReDim array3(1 To 1, 1 To 1)
+    array3(1, 1) = range1.Value
+Else
+    array3 = Range(range1.Address())
+End If
+
+
+Set startrange = Application.InputBox(Prompt:="Please select where you want to put it", Type:=8)
+
+startrange.Select
+For i = 1 To UBound(array1)
+    For j = 1 To UBound(array2)
+        For k = 1 To UBound(array3)
+            ActiveCell.Offset(Z, 0).Value = array1(i, 1) & array2(j, 1) & array3(k, 1)
+            Z = Z + 1
+        Next
+    Next
+Next
+
+Case 4
+
+Set range1 = Application.InputBox(Prompt:="Please Select a Range", Type:=8)
+
+If range1.Cells.Count = 1 Then
+    ReDim array1(1 To 1, 1 To 1)
+    array1(1, 1) = range1.Value
+Else
+    array1 = Range(range1.Address())
+End If
+
+Set range1 = Application.InputBox(Prompt:="Please Select a Range", Type:=8)
+
+If range1.Cells.Count = 1 Then
+    ReDim array2(1 To 1, 1 To 1)
+    array2(1, 1) = range1.Value
+Else
+    array2 = Range(range1.Address())
+End If
+
+Set range1 = Application.InputBox(Prompt:="Please Select a Range", Type:=8)
+
+If range1.Cells.Count = 1 Then
+    ReDim array3(1 To 1, 1 To 1)
+    array3(1, 1) = range1.Value
+Else
+    array3 = Range(range1.Address())
+End If
+
+Set range1 = Application.InputBox(Prompt:="Please Select a Range", Type:=8)
+
+If range1.Cells.Count = 1 Then
+    ReDim array4(1 To 1, 1 To 1)
+    array4(1, 1) = range1.Value
+Else
+    array4 = Range(range1.Address())
+End If
+
+
+Set startrange = Application.InputBox(Prompt:="Please select where you want to put it", Type:=8)
+
+startrange.Select
+For i = 1 To UBound(array1)
+    For j = 1 To UBound(array2)
+        For k = 1 To UBound(array3)
+            For l = 1 To UBound(array4)
+            ActiveCell.Offset(Z, 0).Value = array1(i, 1) & array2(j, 1) & array3(k, 1) & array4(l, 1)
+            Z = Z + 1
+            Next
+        Next
+    Next
+Next
+
+Case 5
+
+Set range1 = Application.InputBox(Prompt:="Please Select a Range", Type:=8)
+
+If range1.Cells.Count = 1 Then
+    ReDim array1(1 To 1, 1 To 1)
+    array1(1, 1) = range1.Value
+Else
+    array1 = Range(range1.Address())
+End If
+
+Set range1 = Application.InputBox(Prompt:="Please Select a Range", Type:=8)
+
+If range1.Cells.Count = 1 Then
+    ReDim array2(1 To 1, 1 To 1)
+    array2(1, 1) = range1.Value
+Else
+    array2 = Range(range1.Address())
+End If
+
+Set range1 = Application.InputBox(Prompt:="Please Select a Range", Type:=8)
+
+If range1.Cells.Count = 1 Then
+    ReDim array3(1 To 1, 1 To 1)
+    array3(1, 1) = range1.Value
+Else
+    array3 = Range(range1.Address())
+End If
+
+Set range1 = Application.InputBox(Prompt:="Please Select a Range", Type:=8)
+
+If range1.Cells.Count = 1 Then
+    ReDim array4(1 To 1, 1 To 1)
+    array4(1, 1) = range1.Value
+Else
+    array4 = Range(range1.Address())
+End If
+
+Set range1 = Application.InputBox(Prompt:="Please Select a Range", Type:=8)
+
+If range1.Cells.Count = 1 Then
+    ReDim array5(1 To 1, 1 To 1)
+    array5(1, 1) = range1.Value
+Else
+    array5 = Range(range1.Address())
+End If
+
+
+Set startrange = Application.InputBox(Prompt:="Please select where you want to put it", Type:=8)
+
+startrange.Select
+For i = 1 To UBound(array1)
+    For j = 1 To UBound(array2)
+        For k = 1 To UBound(array3)
+            For l = 1 To UBound(array4)
+                For m = 1 To UBound(array5)
+                    ActiveCell.Offset(Z, 0).Value = array1(i, 1) & array2(j, 1) & array3(k, 1) & array4(l, 1) & array5(m, 1)
+                    Z = Z + 1
+                Next
+            Next
+        Next
+    Next
+Next
+
+Case 6
+
+Set range1 = Application.InputBox(Prompt:="Please Select a Range", Type:=8)
+
+If range1.Cells.Count = 1 Then
+    ReDim array1(1 To 1, 1 To 1)
+    array1(1, 1) = range1.Value
+Else
+    array1 = Range(range1.Address())
+End If
+
+Set range1 = Application.InputBox(Prompt:="Please Select a Range", Type:=8)
+
+If range1.Cells.Count = 1 Then
+    ReDim array2(1 To 1, 1 To 1)
+    array2(1, 1) = range1.Value
+Else
+    array2 = Range(range1.Address())
+End If
+
+Set range1 = Application.InputBox(Prompt:="Please Select a Range", Type:=8)
+
+If range1.Cells.Count = 1 Then
+    ReDim array3(1 To 1, 1 To 1)
+    array3(1, 1) = range1.Value
+Else
+    array3 = Range(range1.Address())
+End If
+
+Set range1 = Application.InputBox(Prompt:="Please Select a Range", Type:=8)
+
+If range1.Cells.Count = 1 Then
+    ReDim array4(1 To 1, 1 To 1)
+    array4(1, 1) = range1.Value
+Else
+    array4 = Range(range1.Address())
+End If
+
+Set range1 = Application.InputBox(Prompt:="Please Select a Range", Type:=8)
+
+If range1.Cells.Count = 1 Then
+    ReDim array5(1 To 1, 1 To 1)
+    array5(1, 1) = range1.Value
+Else
+    array5 = Range(range1.Address())
+End If
+
+Set range1 = Application.InputBox(Prompt:="Please Select a Range", Type:=8)
+
+If range1.Cells.Count = 1 Then
+    ReDim array6(1 To 1, 1 To 1)
+    array6(1, 1) = range1.Value
+Else
+    array6 = Range(range1.Address())
+End If
+
+
+Set startrange = Application.InputBox(Prompt:="Please select where you want to put it", Type:=8)
+
+startrange.Select
+For i = 1 To UBound(array1)
+    For j = 1 To UBound(array2)
+        For k = 1 To UBound(array3)
+            For l = 1 To UBound(array4)
+                For m = 1 To UBound(array5)
+                    For n = 1 To UBound(array6)
+                        ActiveCell.Offset(Z, 0).Value = array1(i, 1) & array2(j, 1) & array3(k, 1) & array4(l, 1) & array5(m, 1) & array6(n, 1)
+                        Z = Z + 1
+                    Next
+                Next
+            Next
+        Next
+    Next
+Next
+
+Case 7
+
+Set range1 = Application.InputBox(Prompt:="Please Select a Range", Type:=8)
+
+If range1.Cells.Count = 1 Then
+    ReDim array1(1 To 1, 1 To 1)
+    array1(1, 1) = range1.Value
+Else
+    array1 = Range(range1.Address())
+End If
+
+Set range1 = Application.InputBox(Prompt:="Please Select a Range", Type:=8)
+
+If range1.Cells.Count = 1 Then
+    ReDim array2(1 To 1, 1 To 1)
+    array2(1, 1) = range1.Value
+Else
+    array2 = Range(range1.Address())
+End If
+
+Set range1 = Application.InputBox(Prompt:="Please Select a Range", Type:=8)
+
+If range1.Cells.Count = 1 Then
+    ReDim array3(1 To 1, 1 To 1)
+    array3(1, 1) = range1.Value
+Else
+    array3 = Range(range1.Address())
+End If
+
+Set range1 = Application.InputBox(Prompt:="Please Select a Range", Type:=8)
+
+If range1.Cells.Count = 1 Then
+    ReDim array4(1 To 1, 1 To 1)
+    array4(1, 1) = range1.Value
+Else
+    array4 = Range(range1.Address())
+End If
+
+Set range1 = Application.InputBox(Prompt:="Please Select a Range", Type:=8)
+
+If range1.Cells.Count = 1 Then
+    ReDim array5(1 To 1, 1 To 1)
+    array5(1, 1) = range1.Value
+Else
+    array5 = Range(range1.Address())
+End If
+
+Set range1 = Application.InputBox(Prompt:="Please Select a Range", Type:=8)
+
+If range1.Cells.Count = 1 Then
+    ReDim array6(1 To 1, 1 To 1)
+    array6(1, 1) = range1.Value
+Else
+    array6 = Range(range1.Address())
+End If
+
+Set range1 = Application.InputBox(Prompt:="Please Select a Range", Type:=8)
+
+If range1.Cells.Count = 1 Then
+    ReDim array7(1 To 1, 1 To 1)
+    array7(1, 1) = range1.Value
+Else
+    array7 = Range(range1.Address())
+End If
+
+
+Set startrange = Application.InputBox(Prompt:="Please select where you want to put it", Type:=8)
+
+startrange.Select
+For i = 1 To UBound(array1)
+    For j = 1 To UBound(array2)
+        For k = 1 To UBound(array3)
+            For l = 1 To UBound(array4)
+                For m = 1 To UBound(array5)
+                    For n = 1 To UBound(array6)
+                        For o = 1 To UBound(array7)
+                            ActiveCell.Offset(Z, 0).Value = array1(i, 1) & array2(j, 1) & array3(k, 1) & array4(l, 1) & array5(m, 1) & array6(n, 1) & array7(o, 1)
+                            Z = Z + 1
+                        Next
+                    Next
+                Next
+            Next
+        Next
+    Next
+Next
+
+Case 8
+
+Set range1 = Application.InputBox(Prompt:="Please Select a Range", Type:=8)
+
+If range1.Cells.Count = 1 Then
+    ReDim array1(1 To 1, 1 To 1)
+    array1(1, 1) = range1.Value
+Else
+    array1 = Range(range1.Address())
+End If
+
+Set range1 = Application.InputBox(Prompt:="Please Select a Range", Type:=8)
+
+If range1.Cells.Count = 1 Then
+    ReDim array2(1 To 1, 1 To 1)
+    array2(1, 1) = range1.Value
+Else
+    array2 = Range(range1.Address())
+End If
+
+Set range1 = Application.InputBox(Prompt:="Please Select a Range", Type:=8)
+
+If range1.Cells.Count = 1 Then
+    ReDim array3(1 To 1, 1 To 1)
+    array3(1, 1) = range1.Value
+Else
+    array3 = Range(range1.Address())
+End If
+
+Set range1 = Application.InputBox(Prompt:="Please Select a Range", Type:=8)
+
+If range1.Cells.Count = 1 Then
+    ReDim array4(1 To 1, 1 To 1)
+    array4(1, 1) = range1.Value
+Else
+    array4 = Range(range1.Address())
+End If
+
+Set range1 = Application.InputBox(Prompt:="Please Select a Range", Type:=8)
+
+If range1.Cells.Count = 1 Then
+    ReDim array5(1 To 1, 1 To 1)
+    array5(1, 1) = range1.Value
+Else
+    array5 = Range(range1.Address())
+End If
+
+Set range1 = Application.InputBox(Prompt:="Please Select a Range", Type:=8)
+
+If range1.Cells.Count = 1 Then
+    ReDim array6(1 To 1, 1 To 1)
+    array6(1, 1) = range1.Value
+Else
+    array6 = Range(range1.Address())
+End If
+
+Set range1 = Application.InputBox(Prompt:="Please Select a Range", Type:=8)
+
+If range1.Cells.Count = 1 Then
+    ReDim array7(1 To 1, 1 To 1)
+    array7(1, 1) = range1.Value
+Else
+    array7 = Range(range1.Address())
+End If
+
+Set range1 = Application.InputBox(Prompt:="Please Select a Range", Type:=8)
+
+If range1.Cells.Count = 1 Then
+    ReDim array8(1 To 1, 1 To 1)
+    array8(1, 1) = range1.Value
+Else
+    array8 = Range(range1.Address())
+End If
+
+
+Set startrange = Application.InputBox(Prompt:="Please select where you want to put it", Type:=8)
+
+startrange.Select
+For i = 1 To UBound(array1)
+    For j = 1 To UBound(array2)
+        For k = 1 To UBound(array3)
+            For l = 1 To UBound(array4)
+                For m = 1 To UBound(array5)
+                    For n = 1 To UBound(array6)
+                        For o = 1 To UBound(array7)
+                            For p = 1 To UBound(array8)
+                                ActiveCell.Offset(Z, 0).Value = array1(i, 1) & array2(j, 1) & array3(k, 1) & array4(l, 1) & array5(m, 1) & array6(n, 1) & array7(o, 1) & array8(p, 1)
+                                Z = Z + 1
+                            Next
+                        Next
+                    Next
+                Next
+            Next
+        Next
+    Next
+Next
+
+Case Else
+MsgBox ("Enter a Column Count Between 2-8")
+
+End Select
+
+
+
+
+End Sub
